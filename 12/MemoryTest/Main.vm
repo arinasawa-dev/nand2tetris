@@ -1,0 +1,20 @@
+function Main.main 4
+push constant 3
+call Array.new 1
+pop local 1
+push constant 3
+call Array.new 1
+pop local 2
+push constant 3
+call Array.new 1
+pop local 3
+push local 1
+call Memory.deAlloc 1
+pop temp 0
+push local 2
+call Memory.deAlloc 1
+pop temp 0
+call Memory.deFrag 0
+pop temp 0
+push constant 0
+return
